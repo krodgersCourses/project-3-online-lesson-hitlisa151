@@ -3,10 +3,7 @@
   <head>
     <title>Page Title</title>
     <link rel="stylesheet" href="styles.css">
-    input[type="number"] {
-            width: 100px;
-            padding: 5px;
-    }
+    
   </head>
 
   <body>
@@ -40,18 +37,20 @@
   
 <h2>Check Your Answer</h2>
 <input type="number" id="answer" placeholder="Enter number">
-<button onclick="checkAnswer()">Check</button>
+<button id="checkBtn">Check</button>
 
 <p id="feedback"></p>
 
 <script>
     const correctAnswer = 6.03125; 
+    const answerInput = document.getElementById("answer");
+    const feedback = document.getElementById("feedback");
+    const checkBtn = document.getElementById("checkBtn");
 
-    function checkAnswer() {
-        const userAnswer = parseInt(document.getElementById("answer").value, 10);
-        const feedback = document.getElementById("feedback");
+    checkBtn.addEventListener("click", function () {
+        const userAnswer = Number(answerInput.value); 
 
-        if (isNaN(userAnswer)) {
+        if (answerInput.value.trim() === "") {
             feedback.textContent = "Please enter a number.";
             feedback.style.color = "orange";
         } else if (userAnswer === correctAnswer) {
@@ -61,7 +60,7 @@
             feedback.textContent = "❌ Incorrect, try again.";
             feedback.style.color = "red";
         }
-    }
+    });
 </script>
 
   </body>
