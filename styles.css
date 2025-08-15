@@ -1,5 +1,45 @@
 /* A handy list of color names: https://www.w3schools.com/colors/colors_names.asp */
 
 body {
-    background-color:aquamarine
+    background-color:rgb(235, 88, 88)
+}
+
+nav ul{
+  display: flex;
+  justify-content: center;
+  gap: 10px; 
+  background-color: #333;
+}
+
+header h1 {
+    padding: 1.5rem;
+  background-color:#333;
+  color:white;
+  text-align: center;
+  font-size: 1.5rem;
+  font-family:'Courier New', Courier, monospace;
+  }
+
+header h2 {
+    padding: 1.5rem;
+    color: black;
+    text-align: center;
+    font-size: 1rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+header h3 {
+    padding: 1.5rem;
+    color: black;
+    text-align: center;
+    font-size: 1rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+header h4 {
+    padding: 1.5rem;
+    color: black;
+    text-align: center;
+    font-size: 1rem;
+    font-family: 'Courier New', Courier, monospace;
 }
