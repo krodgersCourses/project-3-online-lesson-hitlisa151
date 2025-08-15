@@ -3,6 +3,10 @@
   <head>
     <title>Page Title</title>
     <link rel="stylesheet" href="styles.css">
+    input[type="number"] {
+            width: 100px;
+            padding: 5px;
+    }
   </head>
 
   <body>
@@ -23,9 +27,42 @@
   </section>
 
   <section>
-  <img src="img1.jpg" alt="Graph1">
+    <p>Using what you learned in the video, estimate the volume of the shaded area in the graph 
+      below using Reimann Sums.  Use a width of 1/4 for you rectangles. Enter your answer in the box
+      below. The function is y=-(x^2)+8.
+    </p>
+  </section>
+
+  <section>
+  <img src="img1.png" alt="Graph1">
 </section>
 <!-- Image created by LHitt using Desmos.com----->
   
+<h2>Check Your Answer</h2>
+<input type="number" id="answer" placeholder="Enter number">
+<button onclick="checkAnswer()">Check</button>
+
+<p id="feedback"></p>
+
+<script>
+    const correctAnswer = 6.03125; 
+
+    function checkAnswer() {
+        const userAnswer = parseInt(document.getElementById("answer").value, 10);
+        const feedback = document.getElementById("feedback");
+
+        if (isNaN(userAnswer)) {
+            feedback.textContent = "Please enter a number.";
+            feedback.style.color = "orange";
+        } else if (userAnswer === correctAnswer) {
+            feedback.textContent = "✅ Correct!";
+            feedback.style.color = "green";
+        } else {
+            feedback.textContent = "❌ Incorrect, try again.";
+            feedback.style.color = "red";
+        }
+    }
+</script>
+
   </body>
 </html>
