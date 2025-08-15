@@ -1,14 +1,15 @@
 /* A handy list of color names: https://www.w3schools.com/colors/colors_names.asp */
 
 body {
-    background-color:rgb(235, 88, 88)
+  background-color:rgb(235, 88, 88)           
 }
 
 nav ul{
   display: flex;
   justify-content: center;
   gap: 10px; 
-  background-color: #333;
+  background-color: black;
+  color: white;
 }
 
 header h1 {
@@ -41,5 +42,13 @@ header h4 {
     color: black;
     text-align: center;
     font-size: 1rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+section {
+    padding: 2rem;
+    color: black;
+    text-align: center;
+    font size: 0.5rem;
     font-family: 'Courier New', Courier, monospace;
 }
