@@ -3,17 +3,16 @@
 <html lang="en">
 
   <head>
-    <title>Page Title</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-  </head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lesson Resources</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
 
   <body>
 <section>
-  <h1>Reimann Sums</h1>
+  <h1>Riemann Sums</h1>
 </section>
 
    <nav>
@@ -28,20 +27,21 @@
 
 <section>
     <h1>Watch this video first!</h1>
-    <iframe width="100%" 
-    height="400"
-     src="https://www.youtube.com/embed/dEAk0BHBYCM?si=qvSZ1N1BRXxSAXL1" 
-     title="YouTube video player" 
-     
-     frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-     referrerpolicy="strict-origin-when-cross-origin"
-      allowfullscreen>
-    </iframe>
+   <iframe
+  width="100%"
+  height="400"
+  src="https://www.youtube.com/embed/dEAk0BHBYCM?si=qvSZ1N1BRXxSAXL1"
+  title="YouTube video player"
+  style="border:0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+  referrerpolicy="strict-origin-when-cross-origin"
+  allowfullscreen
+></iframe>
   </section>
 
   <section>
     <p>Using what you learned in the video, estimate the volume of the shaded area in the graph 
-      below using Reimann Sums.  Use a width of 1/4 for you rectangles. Enter your answer in the box
+      below using Riemann Sums.  Use a width of 1/4 for you rectangles. Enter your answer in the box
       below. The function is y=-(x^2)+8.
     </p>
   </section>
@@ -49,15 +49,14 @@
   <section>
   <img src="img1.png" alt="Graph1">
 </section>
-<!-- Image created by LHitt using Desmos.com----->
+
  <section>  
 <h2>Check Your Answer</h2>
-<input type="number" id="answer" placeholder="Enter number"name="Enter Answer Here"> 
+<label for="answer">Enter your answer:</label>
+<input type="number" id="answer" name="answer" placeholder="Enter number">
 <button id="checkBtn">Check</button>
+<p id="feedback" role="status" aria-live="polite"></p>
 
- </section>
-
-<p id="feedback"></p>
 
 <script>
     const correctAnswer = 6.03125; 
@@ -82,7 +81,7 @@
 </script>
 
 <section>
-  <p>So far, you have found the Reimann Sum using the left end point. Use what you already know about that 
+  <p>So far, you have found the Riemann Sum using the left end point. Use what you already know about that 
     to answer the following questions.
   </p>
       <p>Estimate the area of the following problems using the left and right endpoints and the midpoint. Rectangle width, a, and b have been provided. Round to the nearest hundredth.</p>
@@ -102,13 +101,14 @@
   <h3>Answer the following questions. The answers will be emailed to Mrs. Hitt.</h3>
 </section>
 
-<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdyWlDyS2SLE6eR0v7qm8O4VFPWz8sgcY55OBjmlxPor_xFyw/viewform?embedded=true" 
-width="100%"
- height="600" 
- frameborder="0"
-  marginheight="0"
-   marginwidth="0" title="Reiman Sums Form">Loading…
-  </iframe>
+<iframe
+  src="https://docs.google.com/forms/d/e/1FAIpQLSdyWlDyS2SLE6eR0v7qm8O4VFPWz8sgcY55OBjmlxPor_xFyw/viewform?embedded=true"
+  width="100%"
+  height="600"
+  style="border:0"
+  title="Riemann Sums Form"
+  loading="lazy"
+>Loading…</iframe>
 
   
     
@@ -123,13 +123,12 @@ width="100%"
 
     <figure>
       <iframe
-        src="/reimann/index.html"
+        src="/riemann/index.html"
         width="100%"
         height="500"
         title="Riemann Sum p5.js Sketch"
         loading="lazy"
         style="border:0"
-        title="Interactive Processing Graphic"
       ></iframe>
       <figcaption>Explore how the estimate changes as the rectangle width changes.</figcaption>
     </figure>
